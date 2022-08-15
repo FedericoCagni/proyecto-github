@@ -1,0 +1,376 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: rgb(112, 92, 112);
+    text-align: center;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+    color: whitesmoke;
+
+}
+
+.menu a:hover {
+    color: rgb(251, 247, 10);
+    text-shadow: 1px 0.5px rgb(112, 92, 112);
+}
+
+
+.menu ul li {
+
+    background-color: rgb(99, 93, 110);
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    border-radius: 25px;
+}
+
+.img {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img img {
+    height: 60vh;
+    max-width: 100%;
+}
+
+.intro {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 1.20rem;
+}
+
+.wajapen__img {
+    height: 45px;
+    width: 45px;
+    bottom: 9rem;
+    right: 1rem;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.subtitulo {
+    margin-top: 50px;
+    background-color: rgb(112, 92, 112);
+    text-align: center;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.17rem;
+
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.destacados div {
+    font-size: 0.8rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.destacados__title {
+    font-size: 1.25rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+    text-decoration: solid;
+
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja__fija {
+    border: solid 3px black;
+    width: 280px;
+}
+
+button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: white
+}
+
+
+.titulord {
+    margin-top: 100px;
+    background-color: rgb(112, 92, 112);
+    text-align: center;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.17rem;
+
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    list-style: none;
+
+}
+
+.redes ul>li {
+    margin: 10px;
+}
+
+.redes__img {
+    height: 50px;
+    width: 50px;
+}
+
+#footer {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* estilo de quienes somos */
+
+.quienes__container {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.quienes__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quienes__texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.quienes__texto p {
+    margin: 2rem
+}
+
+.quienes__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 300px;
+
+}
+
+.quienes__img img {
+    width: 50%;
+    height: 70%;
+    border: 5px solid grey;
+}
+
+@media (max-width: 950px) {
+    .quienes__texto {
+        width: 100%;
+    }
+
+    .quienes__img {
+        width: 100%;
+    }
+}
+
+/* estilos de prodcutos */
+
+.productos__container {
+    display: flex;
+
+}
+
+.productos__sidebar {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.productos__sidebar--filter {
+    font-weight: bold;
+    margin: 20px;
+    padding: 15px;
+    width: 80%;
+    height: 3rem;
+    border: 3px solid #6666;
+}
+
+.productos__sidebar--filter:hover {
+    color: #ffff;
+    background: rgb(112, 92, 112);
+    box-shadow: 10px 5px 5px rgb(215, 165, 215);
+    ;
+}
+
+.productos__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productos__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.productos__nextpage {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos de catalogo */
+
+.catalago{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.catalogo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: blue;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.catalago__container--img{
+    height: 30vh;
+    max-width: 80%;
+    
+}
+
+.catalago__container p{
+    font-size: 1.25rem;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+    text-decoration: solid;
+}
+
+
+/*   GRIDs & Mediaquery 600p */
+
+@media screen and (max-width: 600px) {
+
+
+    .destacados {
+        grid-template-columns: 1fr;
+    }
+
+    .img img {
+        height: 40vh;
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+
+
+    .destacados {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .catalago__container--img{
+        height: 40vh;
+        max-width: 100%;
+        
+    }
+ 
+}
+
+
+/* ---------- Mediaquery 1024p ----------- */
+
+@media screen and (min-width: 1024px) {
+
+
+    .destacados {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .catalago{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        
+    }
+
+    .catalago p{
+        font-size: 2rem;
+    }
+    
+
+}
