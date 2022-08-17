@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
+    <!-- link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- link css -->
     <link rel="stylesheet" href="./css/main.css">
     <title> Elisa Velas </title>
 </head>
@@ -17,15 +20,35 @@
     <header>
         <h1> Elisa Velas </h1>
         <!--  menu -->
-        <nav class="menu">
-            <ul>
-                <li> <a href="index.html"> Inicio </a></li>
-                <li> <a href="pages/producto.html"> Productos</a></li>
-                <li> <a href="pages/quienes-somos.html"> Quienes somos </a></li>
-                <li> <a href="pages/catalogos.html"> Catalogos </a></li>
-                <li> <a href="pages/contacto.html"> Contacto </a></li>
-                <li> <a href="#footer"> Ir al pie de pagina </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/producto.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./catalogos.html">Catalogos</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Ir al pie de pagina</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -103,35 +126,23 @@
             </div>
         </section>
     </main>
-    <!-- enlace absolutos -->
-    <section>
+    <footer id="footer">    
         <h4 class="titulord"> Nuestras Redes</h4>
         <div class="redes">
             <ul>
-                <li><a href="https://www.facebook.com/" target="_blank"><img class="redes__img" src="./img/facebook.png"
-                            alt="facebook"> </a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img class="redes__img"
-                            src="./img/instagram.png" alt="instagram"> </a></li>
-                <li><a href="https://www.youtube.com/watch?v=XyZXHhYOiFw" target="_blank"><img class="redes__img"
-                            src="./img/youtube.png"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img class="redes__img" src="./img/facebook.png" alt="facebook" > </a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img class="redes__img" src="./img/instagram.png" alt="instagram" > </a></li>
+                <li><a href="https://www.youtube.com/watch?v=XyZXHhYOiFw" target="_blank"><img class="redes__img" src="./img/youtube.png" ></a></li>
             </ul>
-        </div>
-
+        </div>   
         <div class="wajapen">
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="wajapen__img" src="./img/whatsapp.png"
-                    alt="contacto"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="wajapen__img" src="./img/whatsapp.png" alt="contacto"></a>
         </div>
-    </section>
-
-    <footer id="footer">
-        <p> IMPORTANTE: Todas las imágenes de los productos son sólo a modo ilustrativo y pueden diferir del artículo en
-            stock. Los precios indicados tienen IVA incluído y pueden sufrir variaciones sin previo aviso.
-            Disponibilidad sujeta a stock.</p>
-        <p> COPYRIGHT ELISA VELAS - 2022. TODOS LOS DERECHOS RESERVADOS. DEFENSA DE LAS Y LOS CONSUMIDORES. PARA
-            RECLAMOS <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">
-                Ingrese aqui </a></p>
+        <p> IMPORTANTE: Todas las imágenes de los productos son sólo a modo ilustrativo y pueden diferir del artículo en stock. Los precios indicados tienen IVA incluído y pueden sufrir variaciones sin previo aviso. Disponibilidad sujeta a stock.</p>
+        <p> COPYRIGHT ELISA VELAS - 2022. TODOS LOS DERECHOS RESERVADOS. DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank"> Ingrese aqui </a></p>
     </footer>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

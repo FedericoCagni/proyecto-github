@@ -14,6 +14,14 @@ h1 {
     color: whitesmoke;
 }
 
+.nabvar{
+    display: flex;
+    width: 100%;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -22,7 +30,6 @@ h1 {
     align-items: center;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
 }
 
 .menu a {
@@ -285,6 +292,7 @@ button {
 }
 
 .contact__form {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,6 +327,37 @@ button {
     font-family: 'IBM Plex Mono', monospace;
     text-decoration: solid;
 }
+
+/* estilos de contacto */
+
+.fondo{
+    background-image:url(../img/fondocontacto.jpg);
+}
+
+.contact__form--p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation-name: crece;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+@keyframes crece{
+    from{
+        transform: scale(0.5);
+
+    }
+
+    to{
+        transform: scale(1);
+    }
+
+}
+
 
 
 /*   GRIDs & Mediaquery 600p */
